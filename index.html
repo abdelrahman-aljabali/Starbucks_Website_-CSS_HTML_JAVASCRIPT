@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="imgs/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Starbucks, the renowned global coffeehouse, is synonymous with quality and sustainability. From expertly brewed coffees to delightful pastries, Starbucks offers a diverse menu in a cozy, inviting atmosphere. With a focus on ethical sourcing and community engagement, Starbucks is not just a coffee shop, but a community hub. Whether you're grabbing a quick pick-me-up or settling in for some work, Starbucks has something for everyone. Experience the warmth and flavor that only Starbucks can deliver.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <div class="imgBox">
+                    <img src="imgs/3.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="imgs/thumb2.png" onclick="imgSlider('imgs/2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="imgs/thumb3.png" onclick="imgSlider('imgs/3.png');changeCircleColor('#017143')"></li>
+                <li><img src="imgs/thumb2.png" onclick="imgSlider('imgs/2.png');changeCircleColor('#eb7495')"></li>
+            </ul>
+            <ul class="sci">
+               
+                <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAgxJREFUWEflmI1NAzEMhd1JgE1gEmASYBLoJMAksAnoQVIluTh+dgLiRKRTq6qxvzj+vYPsZB12win/DvRcRMrnPd0UPvMzdXkzFgXYjYhcJ8gRCGCPIvKSHjd0BBSAjyJy6db2vQHQt15gDygA75IVg4zVtqcETMliQWetqMHAulfJykNgBhRX/EwdO/YnyhUsUFjyLabftcu0rAUKS0aDBhH+WqQpfMXBzxQ/B+yFdrwRaBTSusqRK+Fw8NnN0kCjfqkqKjRbsgEKOdXSQKPW7CppdFqg3cP2QC1BmhuxeZGRvzlwDxRVB6XRuzRQgKFQeILyQUTuS4AeKNIRotO7UBYB264Pr6BUAKoM0AONCAZLzz+Za9bOAdDchW360RnBq0Erea1F4Zvw0chaDVq50l8GrQKqBUWkIUKtNSx3xmZWxxKLzoCy6W8IygbTDCib/obBxLZ1M6Bs+humJ7gXU+d/A7SKn17CZ529jZmV6WlTjlc2JStBqaaEvf6fsijd5gGAjf4SdpVFXY0zANh8l2FXgLpHEShHqkIGYFu+WdDwcJdh2XF5FnQ4xljjsgd2BtSctRhQ1g0ioNZofQpWFjTDol/VuisvKDsMfsF6QPPptGGNBaWtWOa+CGjen19D4hPwI9D8IhdWPM1BVtO7CrSUA9gegPa7hzF89W4lKzbMXP0K/bSM3YB+Av+sjSuwHlRvAAAAAElFTkSuQmCC"/></a></li>
+                <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAppJREFUWEftmLtqVUEUhr90FiJok9Y8gCAKgmmiRLS00VoFIRY+g8aHECyUxFrBUkG8VYogqNgnVoKFaGOr/LAmjDtzWbPPbCVyBg4H9p5Z8+1/XeaywB5pC3uEkzlob0/9t4oeBvQ7BayMUG0b+Azo/6X9u8x4FRXchgG6DDs7Cfi0B9gDug7cdE48pptg7wOaJ9tqoFNDxmCbwJUcaQlUcfhijEQjx0hZgSp2d7USqCAFO0UTTMq2YJdaQX9NQQg7i4wSdCsxh0AF/EfLKXrZsnwMqyYRRKoN41Cgw76qArvc3wtUhl/ZBGGSUG8vRW6OXZtT9FaqAuRAVTOlqqclDUcDBSRbocSFYp+zn8z+WUGHbloGDgGK72/A6wFwKiaHYsgjsuuKUU/Gq5To69UEeA24COyzZz+BB8Ad4I0988R+V9DY2EmLqbOZOHls799a4tSW4q6gsZpSVQlTaveAq9ahtpB0BQ217gTwDNhfAf0OnAHeWQUorXhdQUMSngOeeEoDsAo8N/eXkqobaFwLpdJTJ2hcIUqrXjdQcYVJjxvowQrsV0Dqv//bro+LvMrPWgX0NnDdWaK6Khq7/xhwAzifgX0E6MM+2Ptaje4KqjljVY9a+bkALBrQF+AhcBf4aM88G/HuoKmN7hHggEH9AD5FKtfqZ+g6yVrvOu/YyuQ9dzWBelwUh6SAFQphZxT2mFrbtWrl9qepsI5XvZ33ud2T103OEtrUrQk0t6ltmnFk56ajiOaolZGRHMVhyYzXiNIp9F+omjwv1UD1vjWpZlG5eKSp3ZQMzzuzgJTG1s5d7ovcKS/Jsrcj8ZfVFB2qEK4d9a9rx5b6KFvh2lFJk7y6ycneCjqV66t256BViRo7zBVtFKza/Tf80pgr+3WqNgAAAABJRU5ErkJggg=="/></a></li>
+                <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAVNJREFUWEftmOsNwjAMhK+bwCTAJjAJMAlsAkwCm4BOaiQruKqrvJo2/h25X88X222HSqKrhBMNNHalFqHoBcAutjIj+V4A7gA+/rkhRW8Ajpkh3eMIerKCPgDsC4E+ARxWA0rv8I2p9iaR4sGKshxMwiAkfZzCHkGgmsEJ+06gahDoFQDblYxZgtKbWw+U7Yvljx1BihKGCagsoakmW1iKCAZNAaXlLArKKrhKjLW1INAxj2qX7dvPbX8cEpT+Pg+UKDsou4TfKSxdIzuoxdPaTlEMlKX+W9v6t+Bk87tHEVCpmHW6ZQfVBoLcF5w1eOlkZAfV/McOQGVlVAPKxUb21tkq2kCdv+Rl0SaT1aNN0aZor8B6br2/ZMjep81ybe+0nAtS1LIJxTqzTFAuvEMbeCzlhvJM+knmPhdK/HZUvwoW8SM3dYkn5W+KTpLLcLgaRX8zMqkr/50PTQAAAABJRU5ErkJggg=="/></a></li>
+               
+            </ul>
+        </div>
+
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+    
+
+</body>
+</html>

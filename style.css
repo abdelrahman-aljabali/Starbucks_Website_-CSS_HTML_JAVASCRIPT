@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Roboto:ital,wght@0,300;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+section header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    font-size: 20px;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox{
+    position: relative;
+    max-width: 800px;
+    padding-left: 40px;
+}
+
+.textBox h2{
+    color: #333;
+    font-size: 4.8em;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.textBox p{
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #fff;
+    background: #017143;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.imgBox{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.imgBox img{
+    max-width: 500px;
+    display: flex;
+}
+
+.thumb{
+    position: absolute;
+    left: 30%;
+    top: 92%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+
+.thumb li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.thumb li:hover{
+    transform: translateY(-15%);
+    transition-duration: 0.8s;
+}
+
+.thumb li img{
+    width: 90px;
+}
+
+.sci{
+    position: absolute;
+    list-style: none;
+    right: 20px;  
+}
+
+.sci li a{
+    display: inline-block;
+    margin: 13px 0; 
+    color: #fff; 
+}
+
+
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(760px at right 1000px);
+    background: #017143;
+    margin-right: 2000px;
+}
